@@ -1,0 +1,33 @@
+<header class="container-fluid">
+    <a href="/board/tasks/create"><button class="btn btn-success">Create new task</button></a>
+</header>  
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>name</th>
+            <th>content</th>
+            <th>details</th>
+            <th>deadline</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each tasks}}
+        <tr>
+            <td>{{name}}</td>
+            <td>{{content}}</td>
+            <td>{{details}}</td>
+            <td>{{deadline}}</td>
+            <td><a href="/board/tasks/edit/{{id}}" class="btn btn-info">Edit</a></td>
+              <td>
+        
+                <form action="/board/tasks/{{id}}?_method=DELETE" method="post">    
+        
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                        
+                </form>
+            </td>
+         </tr>
+        {{/each}}
+    </tbody>
+</table>
+    
