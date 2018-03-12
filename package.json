@@ -1,15 +1,14 @@
 {
-  "name": "pos",
+  "name": "nodeToDo",
   "version": "1.0.0",
-  "description": "node js point of sale first version",
+  "description": "node js to do app",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "point",
-    "of",
-    "sale"
+    "node",
+    "todo"
   ],
   "author": "Adam Tomas",
   "license": "ISC",
